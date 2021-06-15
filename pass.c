@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
     else if(strcmp(argv[1], "password") == 0){
         if(argc == 3){
             int key = atoi(argv[2]);
-            char* address = "0xc242a00xc242c0";//address goes here from other function
+            char* address = "";//address goes here from other function
             int n = strlen(address);
             printf("Password: ");
                 for(int i = 0; i < n; i++){
