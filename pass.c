@@ -9,13 +9,13 @@ int main(int argc, char* argv[]){
         if(strcmp(argv[1], "address") == 0){
             int* x = malloc(sizeof(int));
             int* y = malloc(sizeof(int));
-            printf("%p%p\n", x, y);
+            printf("%p%p\n", x, y);//print out the pointers giving us some random text to work with before we run the algorithm
             free(x);
             free(y);
             return 0;
     }
-    else if(strcmp(argv[1], "password") == 0){
-        if(argc == 3){
+    else if(strcmp(argv[1], "password") == 0){//if the command line argument name is 'password'
+        if(argc == 3){// if there are 3 arguments (they inputted a number)
             int key = atoi(argv[2]);
             char* address = "";//address goes here from other function
             int n = strlen(address);
